@@ -76,7 +76,73 @@ class Solution {
         return true;
     }
 }
- 
+ ...............................case1
+class Case1 {
+    public static void main(String[] args) {
+
+        int n = 9;
+
+        if (n <= 1) {
+            System.out.println("Not Prime");
+            return;
+        }
+
+        for (int i = 2; i * i <= n; i++) {
+            if (n % i == 0) {
+                System.out.println("Not Prime");
+                return;
+            }
+        }
+
+        System.out.println("Prime");
+    }
+}
+
+.......................case2
+class Case2 {
+    public static void main(String[] args) {
+
+        int n = 9;
+
+        if (n <= 1) {
+            System.out.println(false);
+            return;
+        }
+
+        for (int i = 2; i * i <= n; i++) {
+            if (n % i == 0) {
+                System.out.println(false);
+                return;
+            }
+        }
+
+        System.out.println(true);
+    }
+}
+.....................case3
+class Case3 {
+    public static void main(String[] args) {
+
+        int n = 9;
+
+        for (int x = 2; x <= n; x++) {
+
+            boolean isPrime = true;
+
+            for (int i = 2; i * i <= x; i++) {
+                if (x % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+
+            if (isPrime) {
+                System.out.println(x);
+            }
+        }
+    }
+}
+
 
 .................................Write a program that gets n as input and print all the prime numbers till that number.
 
