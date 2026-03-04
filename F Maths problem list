@@ -175,6 +175,20 @@ class Mproblems {
     }
 }
 
+............PERFECT NUMBER.........(SUM OF DIVISIORS EXCEPT THE NO ITSELF= NUMBER)
+int sum=1;
+for(int i=2;i<Math.sqrt(n);i++){
+    if(n%i==0){
+        sum=sum+i;
+        if(n%i!=i){
+            sum=sum+(n/i);
+        }
+    }
+    if(sum==n){
+        perfect number
+    }
+}
+
 ........................5.GCD of two numbers(eucledian--modulo)
 
 class Solution {
@@ -440,20 +454,4 @@ class Solution {
         
     }
 }
-15....Count Squares
-Input: n = 9
-Output: 2
-Explanation: 1 and 4 are the only Perfect Squares less than 9. So, the Output is 2.
-class Solution {
-    static int countSquares(int n) {
-        code here
-        int i=1;
-        while(i*i<n){
-            i++;
-        }
-        return i-1;
-        
-        or code
-        return (int)Math.sqrt(n-1);
-    }
-}
+
