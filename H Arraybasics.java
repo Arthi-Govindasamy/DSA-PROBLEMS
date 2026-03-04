@@ -1,3 +1,15 @@
+..Print Elements of Array
+class Solution {
+    
+    void printArray(int arr[]) {
+      
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i]+" ");
+        }
+        
+    }
+}
+
 1...........Sum of Array
 class Solution {
     int arraySum(int arr[]) {
